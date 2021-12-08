@@ -1,0 +1,38 @@
+block variables
+
+doctype html
+
+if !isAJAX
+  html(
+    class=isPhone || isTablet ? 'mobile' : 'desktop'
+    lang="en"
+  )
+    head
+      meta(charset="UTF-8")
+      meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+      base(href="/")
+
+      title Bizarro
+
+      style
+        include ../public/main.css
+
+    body
+      include ./partials/preloader
+      include ./partials/navigation
+
+      .content#content(data-template=template)
+        block body
+
+      include ./partials/noscript
+
+      script(async src=getVersionedPath('/main.js'))
+else
+  html(lang="en")
+    head
+      title Bizarro
+
+    body
+      .content#content(data-template=template)
+        block body

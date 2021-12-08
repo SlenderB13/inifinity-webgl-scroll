@@ -1,0 +1,19 @@
+extends ../base.pug
+
+block variables
+  - var template = 'home'
+
+block body
+  .home
+    .home__content
+
+      .home__gallery
+        each image in images
+          figure.home__gallery__media
+            img.home__gallery__media__image(src=image)
+
+      footer.home__footer
+        p.home__footer__made-by made by <a class='home__footer__link' href='#'>Lucas Silva</a>
+        .home__footer__links
+          a instagram
+          a github

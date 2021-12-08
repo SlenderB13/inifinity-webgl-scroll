@@ -1,0 +1,20 @@
+.navigation {
+  @extend %cover;
+
+  pointer-events: none;
+  z-index: z('navigation');
+  text-align: end;
+  padding: 4rem;
+
+}
+
+.navigation__link {
+  pointer-events: auto;
+  font-family: 'Glamore';
+  font-size: 2rem;
+  margin-right: 2rem;
+
+  &:first-child() {
+    margin-right: 145rem;
+  }
+}

@@ -1,0 +1,24 @@
+.about {
+
+}
+
+.about__content {
+
+}
+.about {
+  @extend %page;
+
+  font-size: 40rem;
+  word-break: break-all;
+  font-family: 'Glamore';
+
+  &--active {
+    @extend %page--active;
+  }
+}
+
+.about__content {
+  @extend %content;
+
+  color: #6b705c;
+}
