@@ -20,6 +20,7 @@ export default class {
 
     this.renderer = new Renderer({
       alpha: true,
+      antialias: true,
       dpr: Math.min(window.devicePixelRatio, 2)
     })
 

@@ -15,6 +15,17 @@
   height: 150vh;
 }
 
+.home__content__title {
+  width: 100%;
+  font-size: 6rem;
+  letter-spacing: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+}
+
 .home__title {
   color: #6d6d6d;
   font-size: 10rem;
